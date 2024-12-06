@@ -1,0 +1,100 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2e2a62, #4c418e);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(25, 24, 48, 0.9);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Asegura que todo dentro del contenedor esté centrado */
+}
+
+/* Título de la app */
+.app-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffd700; /* Dorado para resaltar el nombre */
+}
+
+/* Descripción */
+.description {
+    font-size: 1.1em;
+    color: #c0c0f0; /* Tono claro en contraste */
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+/* Código QR */
+.qr-code {
+    margin: 20px auto; /* Centra horizontalmente el QR */
+    width: 180px;
+    border: 3px solid #ffd700;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: block; /* Asegura que se comporte como un bloque centrado */
+}
+
+/* Botón de descarga */
+.download-button {
+    display: inline-block;
+    margin: 20px auto; /* Centra horizontalmente el botón */
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ffd700; /* Dorado para llamar la atención */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-button:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
+
+/* Texto de descarga */
+.download-text {
+    font-size: 1.2em;
+    color: #bdbdff; /* Texto claro para instrucciones */
+    margin: 10px 0;
+}
+
+/* Capturas de pantalla */
+.screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.screenshots img {
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    border: 2px solid #4c418e; /* Bordes en púrpura */
+}
+
+.screenshots img:hover {
+    transform: scale(1.05);
+}

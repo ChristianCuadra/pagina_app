@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate My Harmony</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function() {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            document.getElementById(isMobile ? "downloadButton" : "qrCode").style.display = "block";
+        };
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="app-title">Rate My Harmony</h1>
+    <p class="description">Busca y califica tus canciones favoritas. Descubre nueva música y comparte tus opiniones.</p>
+    
+    <!-- Código QR para computadoras -->
+    <img src="imgnes/qr.png" alt="Código QR para descargar Rate My Harmony" class="qr-code" id="qrCode" style="display: none;">
+    
+    <!-- Botón de descarga para dispositivos móviles -->
+    <a href="tu_aplicacion.apk" class="download-button" id="downloadButton" style="display: none;">Descargar APK</a>
+    
+    <p class="download-text">Escanea el código o descarga la app</p>
+    
+    <div class="screenshots">
+        <img src="imgnes/foto.png" alt="Captura de pantalla 1">
+        <img src="imgnes/foto2.png" alt="Captura de pantalla 2">
+        <!-- Añade más capturas de pantalla si es necesario -->
+    </div>
+</div>
+
+</body>
+</html>
